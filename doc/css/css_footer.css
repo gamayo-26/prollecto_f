@@ -1,0 +1,13 @@
+footer{
+    background-color: rgb(240, 237, 233);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.license{
+    font-size: 0.8em;
+    color: #7b3f97;
+    text-align: center;
+    padding: 10px;
+}
