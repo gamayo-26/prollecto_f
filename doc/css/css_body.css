@@ -1,6 +1,19 @@
-
-html, body {
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/fondo_.jpg');
+    background-color: rgba(72, 12, 87, 0.6);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
 }
