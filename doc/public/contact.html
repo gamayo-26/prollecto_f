@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Sobre mí</title>
     <link rel="stylesheet" href="../css/css_body.css">
     <link rel="stylesheet" href="../css/css_header.css">
     <link rel="stylesheet" href="../css/css_footer.css">
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="contenedor_botones">
-                <a href="../index.html">
+                <a href="fii.html">
                     <button class="boton_sircular">
                         <img src="../images/maletin_b.png">
                     </button>
@@ -46,15 +46,15 @@
                 </a>
             </div>
             <div class="contenedor_botones">
-                <a href="../index.html">
+                <a href="topic.html">
                     <button class="boton_sircular">
                         <img src="../images/bulbo_b.png">
                     </button>
-                    <p class="texto_boton">Seccion</p>
+                    <p class="texto_boton">Seccion tematica</p>
                 </a>
             </div>
             <div class="contenedor_botones">
-                <a href="../index.html">
+                <a href="net.html">
                     <button class="boton_sircular">
                         <img src="../images/globo_b.png">
                     </button>
@@ -72,22 +72,27 @@
                             <img src="../images/hogar_b.png">
                         </button>
                     </a>
-                    <a href="degree.html">
+                    <a href="about.html">
                         <button class="boton_desplegable">
-                            <img src="../images/sobre_b.png">
+                            <img src="../images/usuario_b.png">
                         </button>
                     </a>
-                    <a href="../index.html">
+                    <a href="degree.html">
+                        <button class="boton_desplegable">
+                            <img src="../images/gorro-de-graduacion_b.png">
+                        </button>
+                    </a>
+                    <a href="fii.html">
                         <button class="boton_desplegable">
                             <img src="../images/maletin_b.png">
                         </button>
                     </a>
-                    <a href="../index.html">
+                    <a href="topic.html">
                         <button class="boton_desplegable">
                             <img src="../images/bulbo_b.png">
                         </button>
                     </a>
-                    <a href="../index.html">
+                    <a href="net.html">
                         <button class="boton_desplegable">
                             <img src="../images/globo_b.png">
                         </button>
@@ -98,8 +103,46 @@
     </header>
     <main>
         <section>
-            <div>
+            <div class="contenedor_blanco">
+                <form id="formularioContacto">
+                    <label class="formulario_c" for="nombre">Nombre:</label>
+                    <hr>
+                    <input type="text" id="nombre" name="nombre" required>
 
+                    <label class="formulario_c" for="telefono">Teléfono:</label>
+                    <hr>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label class="formulario_c" for="correo">Correo:</label>
+                    <hr>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label class="formulario_c" for="comentario">Comentario:</label>
+                    <hr>
+                    <textarea id="comentario" name="comentario" required></textarea>
+
+                    <button class="boton_morado" type="submit">
+                        <img src="../images/avion-de-papel.png">
+                    </button>
+                </form>
+            </div>
+            <div class="contenedor_redes">
+                <!-- contenedor de las redes sociales -->
+                <a href="../doc/public/contact.html">
+                    <button class="iciono_redes">
+                        <img src="../images/icons/sobre.png" alt="Botón Circular">
+                    </button>
+                </a>
+                <a href="../doc/public/degree.html">
+                    <button class="iciono_redes">
+                        <img src="../images/icons/linkedin.png" alt="Botón Circular">
+                    </button>
+                </a>
+                <a href="../doc/public/fii.html">
+                    <button class="iciono_redes">
+                        <img src="../images/icons/github.png" alt="Botón Circular">
+                    </button>
+                </a>
             </div>
         </section>
     </main>
@@ -107,5 +150,11 @@
         <h2 class="license">© 2024 Carlos Manuel Gamayo</h2>
     </footer>
 </body>
+<script>
+    document.getElementById('formularioContacto').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+</script>
 
 </html>

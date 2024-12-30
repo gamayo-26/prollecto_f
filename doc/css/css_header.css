@@ -90,6 +90,7 @@ header {
     scale: 1.1;
     background-color: rgb(72, 12, 87, 0.9);
 }
+
 @media screen and (max-width: 1000px) {
 
     .texto_boton {
