@@ -6,12 +6,6 @@ body {
     background-size: cover;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
 a {
     text-decoration: none;
     margin: 40px;
