@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/css_body.css">
     <link rel="stylesheet" href="../css/css_header.css">
     <link rel="stylesheet" href="../css/css_footer.css">
-    <link rel="stylesheet" href="../css/css_net.css">
 </head>
 
 <body>
@@ -23,11 +22,11 @@
                 </a>
             </div>
             <div class="contenedor_botones">
-                <a href="contact.html">
+                <a href="about.html">
                     <button class="boton_sircular">
-                        <img src="../images/sobre_b.png">
+                        <img src="../images/usuario_b.png">
                     </button>
-                    <p class="texto_boton">Contacto</p>
+                    <p class="texto_boton">Sobre mí</p>
                 </a>
             </div>
             <div class="contenedor_botones">
@@ -36,14 +35,6 @@
                         <img src="../images/gorro-de-graduacion_b.png">
                     </button>
                     <p class="texto_boton">Sobre el Grado</p>
-                </a>
-            </div>
-            <div class="contenedor_botones">
-                <a href="fii.html">
-                    <button class="boton_sircular">
-                        <img src="../images/maletin_b.png">
-                    </button>
-                    <p class="texto_boton">Sobre Fundamentos</p>
                 </a>
             </div>
             <div class="contenedor_botones">
@@ -73,19 +64,14 @@
                             <img src="../images/hogar_b.png">
                         </button>
                     </a>
-                    <a href="contact.html">
+                    <a href="about.html">
                         <button class="boton_desplegable">
-                            <img src="../images/sobre_b.png">
+                            <img src="../images/usuario_b.png">
                         </button>
                     </a>
                     <a href="degree.html">
                         <button class="boton_desplegable">
                             <img src="../images/gorro-de-graduacion_b.png">
-                        </button>
-                    </a>
-                    <a href="fii.html">
-                        <button class="boton_desplegable">
-                            <img src="../images/maletin_b.png">
                         </button>
                     </a>
                     <a href="topic.html">
@@ -105,40 +91,40 @@
     <main>
         <section>
             <div class="contenedor_blanco">
-                <div class="ciculos_color" style="background-color: rgba(72, 12, 87, 0.6);width: 280px;height: 280px;">
-                    <div class="ciculos_color" style="width: 260px;height: 260px;">
-                        <img src="../images/yo.jpg" style=" width: 100%; height: 100%;">
-                    </div>
-                </div>
-                <div class="contenedor_header">
-                    <div class="targeta_morada">
-                        <h3 class="titulo_tarjeta">Titulos:</h3>
-                        <ul class="lista_">
-                            <li>Desarrollo de aplicaciones multiplataforma</li>
-                            <li>Estudiando ingeniería informática </li>
-                        </ul>
-                        <br>
-                        <h3 class="titulo_tarjeta">Habilidades tecnicas</h3>
-                        <ul class="lista_">
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>SQL</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <div class="targeta_morada">
-                        <h3 class="titulo_tarjeta">Habilidades blandas</h3>
-                        <ul class="lista_">
-                            <li>Comunicación efectiva</li>
-                            <li>Trabajo en equipo</li>
-                            <li>Resolución de problemas</li>
-                            <li>Adaptabilidad</li>
-                            <li>Creatividad</li>
-                            <li>Liderazgo</li>
-                        </ul>
-                    </div>
-                </div>
+                <form id="formularioContacto">
+                    <label class="formulario_c" for="nombre">Nombre:</label>
+                    <hr>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label class="formulario_c" for="telefono">Teléfono:</label>
+                    <hr>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label class="formulario_c" for="correo">Correo:</label>
+                    <hr>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label class="formulario_c" for="comentario">Comentario:</label>
+                    <hr>
+                    <textarea id="comentario" name="comentario" required></textarea>
+
+                    <button class="boton_morado" type="submit">
+                        <img src="../images/avion-de-papel.png">
+                    </button>
+                </form>
+            </div>
+            <div class="contenedor_redes">
+                <!-- contenedor de las redes sociales -->
+                <a href="linkedin.com/in/carlos-manuel-gamayo-león-41139a273">
+                    <button class="iciono_redes">
+                        <img src="../images/icons/linkedin.png" alt="Botón Circular">
+                    </button>
+                </a>
+                <a href="https://github.com/gamayo-26">
+                    <button class="iciono_redes">
+                        <img src="../images/icons/github.png" alt="Botón Circular">
+                    </button>
+                </a>
             </div>
         </section>
     </main>
@@ -146,5 +132,11 @@
         <h2 class="license">© 2024 Carlos Manuel Gamayo</h2>
     </footer>
 </body>
+<script>
+    document.getElementById('formularioContacto').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.reset();
+    });
+</script>
 
 </html>
