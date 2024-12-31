@@ -122,3 +122,33 @@ textarea {
     margin: 0;
     margin-bottom: 10%;
 }
+
+/* aprtado del topic */
+.modos_de_juego {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(72, 12, 87, 0.6);
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.modos_de_juego img {
+    float: left;
+    margin: 10px;
+}
+
+.dardos {
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+    object-fit: cover;  
+}
+
+.titulos {
+    font-size: 4em;
+    color: rgba(72, 12, 87, 0.9);
+    font-weight: bold;
+    text-align: center;
+}
