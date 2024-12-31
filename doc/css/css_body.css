@@ -30,7 +30,7 @@ input {
     margin: auto;
     height: auto;
     width: 100%;
-}   
+}
 
 textarea {
     border: none;
@@ -101,7 +101,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .iciono_redes img {
@@ -118,7 +118,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: auto; 
+    gap: auto;
     margin: 0;
     margin-bottom: 10%;
 }
@@ -143,7 +143,7 @@ textarea {
     margin: 10px;
     width: 20%;
     height: 20%;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
 .titulos {
@@ -151,4 +151,35 @@ textarea {
     color: rgba(72, 12, 87, 0.9);
     font-weight: bold;
     text-align: center;
+}
+
+.targeta_morada {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgba(72, 12, 87, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo_tarjeta {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #f5f5dc;
+    text-decoration: underline;
+    margin-bottom: 0%;
+}
+
+.lista_ {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #f5f5dc;
+    list-style-type: none;
+}
+
+.lista_ li::before {
+    content: '→';
+    margin-right: 10px;
+    color: #f5f5dc;
 }
